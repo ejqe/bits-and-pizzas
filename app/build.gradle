@@ -1,3 +1,4 @@
+
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
@@ -6,6 +7,10 @@ plugins {
 android {
     namespace 'com.erickeugenio.bitsandpizzas'
     compileSdk 33
+
+    buildFeatures{
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId "com.erickeugenio.bitsandpizzas"
